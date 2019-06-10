@@ -1,0 +1,1 @@
+The idea is come from https://stackoverflow.com/questions/6157929/how-to-simulate-a-mouse-click-using-javascript
