@@ -20,20 +20,19 @@
   },
   "background": {
     "scripts": [
-      "/lib/common.js"
+      "/lib/background.js"
     ]
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search?q=*"],
+      "js": ["/lib/content.js"]
+    }
+  ],
   "icons": {
     "16": "data/icons/16.png",
     "24": "data/icons/24.png",
     "32": "data/icons/32.png",
-    "64": "data/icons/64png"
-  },
-
-  "applications": {
-    "gecko": {
-      "id": "search-engine-navigate12344534@example.com",
-      "strict_min_version": "52.0"
-    }
+    "64": "data/icons/64.png"
   }
 }
