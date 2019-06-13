@@ -7,6 +7,11 @@
   "homepage_url": "https://chuyenthienha.com/",
 
   "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "contextMenus",
+    "https://www.google.com/search?q=*"
   ],
 
   "browser_action": {
@@ -23,12 +28,6 @@
       "/lib/background.js"
     ]
   },
-  "content_scripts": [
-    {
-      "matches": ["https://www.google.com/search?q=*"],
-      "js": ["/lib/content.js"]
-    }
-  ],
   "icons": {
     "16": "data/icons/16.png",
     "24": "data/icons/24.png",
